@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Narcotics Anonymous</string>
+    <string name="rate">Rate and review</string>
+
+    <string-array name="state_array">
+        <item>California</item>
+        <item>Florida</item>
+        <item>Kentucky</item>
+        <item>Maine</item>
+        <item>Massachusetts</item>
+        <item>New Hampshire</item>
+        <item>Ohio</item>
+    </string-array>
+
+    <string-array name="day_array">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:background="@drawable/list_card"
+    android:paddingTop="25dp">
+
+    <TextView
+        android:id="@+id/meeting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:text="Title"/>
+
+    <TextView
+        android:id="@+id/meeting_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meeting_title"
+        android:layout_marginTop="5dip"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="Address"/>
+
+    <TextView
+        android:id="@+id/meeting_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meeting_address"
+        android:layout_marginTop="5dip"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="City"/>
+
+    <TextView
+        android:id="@+id/meeting_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:text="Day Time"
+        android:layout_alignBottom="@+id/meeting_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
