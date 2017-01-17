@@ -8,42 +8,48 @@
     android:paddingTop="25dp">
 
     <TextView
-        android:id="@+id/meeting_title"
+        android:id="@+id/meeting_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#343434"
         android:textStyle="bold"
         android:typeface="sans"
-        android:text="Title"/>
+        android:text="Time"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
-        android:id="@+id/meeting_address"
+        android:id="@+id/meeting_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/meeting_title"
-        android:layout_marginTop="5dip"
         android:textColor="#343434"
-        android:textSize="12sp"
-        android:text="Address"/>
-
-    <TextView
-        android:id="@+id/meeting_city"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/meeting_address"
-        android:layout_marginTop="5dip"
-        android:textColor="#343434"
-        android:textSize="12sp"
-        android:text="City"/>
+        android:typeface="sans"
+        android:text="Place"
+        android:layout_below="@+id/meeting_distance"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/meeting_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#343434"
-        android:textSize="12sp"
-        android:text="Day Time"
-        android:layout_alignBottom="@+id/meeting_title"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:typeface="sans"
+        android:text="Day"
+        android:layout_below="@+id/meeting_place"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/meeting_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:typeface="sans"
+        android:text="Distance"
+        android:layout_below="@+id/meeting_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

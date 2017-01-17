@@ -4,136 +4,203 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MeetingItem {
-    private String comments;
-    private String day;
-    private String hash;
-    private String latitude;
-    private String location_city;
-    private String location_info;
-    private String location_street;
-    private String location_sub_province;
-    private String location_text;
-    private String longitude;
-    private String name;
-    private String state;
-    private String time;
-    private String zipcode;
+    public String ADDDT;
+    public String ADDRESS;
+    public String ADDUSER;
+    public String BOROUGH;
+    public String CITY;
+    public String CONTGRANDPAR;
+    public String COUNTRY;
+    public String DAY;
+    public String DAYCHAR;
+    public String DIRECTIONS;
+    public long DISTANCE;
+    public String FORMAT;
+    public String GROUPID;
+    public String INSTITUTIONAL;
+    public String LANG1;
+    public String LANG2;
+    public String LANG3;
+    public double LATITUDE;
+    public double LONGITUDE;
+    public String MBADDDT;
+    public String MBADDUSER;
+    public String MBCHGDT;
+    public String MBCHGUSER;
+    public String MEETING;
+    public String MEETINGUID;
+    public String MTADDDT;
+    public String MTADDUSER;
+    public String MTCHGDT;
+    public String MTCHGUSER;
+    public String OPEN;
+    public String PARENTADDDT;
+    public String PARENTADDUSER;
+    public String PLACE;
+    public String ROOM;
+    public String STATE;
+    public String STATENAME;
+    public String TIME;
+    public String WCHAIR;
+    public String ZIP;
 
     // Parameterless Constructor
     public MeetingItem(){
-
     }
 
-    public String getComments() {
-        return comments;
+    public String getADDDT() {
+        return ADDDT;
     }
 
-    public void setComments(String comments) {
-        this.comments = comments;
+    public String getADDRESS() {
+        return ADDRESS;
     }
 
-    public String getDay() {
-        return day;
+    public String getADDUSER() {
+        return ADDUSER;
     }
 
-    public void setDay(String day) {
-        this.day = day;
+    public String getBOROUGH() {
+        return BOROUGH;
     }
 
-    public String getHash() {
-        return hash;
+    public String getCITY() {
+        return CITY;
     }
 
-    public void setHash(String hash) {
-        this.hash = hash;
+    public String getCONTGRANDPAR() {
+        return CONTGRANDPAR;
     }
 
-    public String getLatitude() {
-        return latitude;
+    public String getCOUNTRY() {
+        return COUNTRY;
     }
 
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
+    public String getDAY() {
+        return DAY;
     }
 
-    public String getLocation_city() {
-        return location_city;
+    public String getDAYCHAR() {
+        return DAYCHAR;
     }
 
-    public void setLocation_city(String location_city) {
-        this.location_city = location_city;
+    public String getDIRECTIONS() {
+        return DIRECTIONS;
     }
 
-    public String getLocation_info() {
-        return location_info;
+    public long getDISTANCE() {
+        return DISTANCE;
     }
 
-    public void setLocation_info(String location_info) {
-        this.location_info = location_info;
+    public String getFORMAT() {
+        return FORMAT;
     }
 
-    public String getLocation_street() {
-        return location_street;
+    public String getGROUPID() {
+        return GROUPID;
     }
 
-    public void setLocation_street(String location_street) {
-        this.location_street = location_street;
+    public String getINSTITUTIONAL() {
+        return INSTITUTIONAL;
     }
 
-    public String getLocation_sub_province() {
-        return location_sub_province;
+    public String getLANG1() {
+        return LANG1;
     }
 
-    public void setLocation_sub_province(String location_sub_province) {
-        this.location_sub_province = location_sub_province;
+    public String getLANG2() {
+        return LANG2;
     }
 
-    public String getLocation_text() {
-        return location_text;
+    public String getLANG3() {
+        return LANG3;
     }
 
-    public void setLocation_text(String location_text) {
-        this.location_text = location_text;
+    public double getLATITUDE() {
+        return LATITUDE;
     }
 
-    public String getLongitude() {
-        return longitude;
+    public double getLONGITUDE() {
+        return LONGITUDE;
     }
 
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
+    public String getMBADDDT() {
+        return MBADDDT;
     }
 
-    public String getName() {
-        return name;
+    public String getMBADDUSER() {
+        return MBADDUSER;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getMBCHGDT() {
+        return MBCHGDT;
     }
 
-    public String getState() {
-        return state;
+    public String getMBCHGUSER() {
+        return MBCHGUSER;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public String getMEETING() {
+        return MEETING;
     }
 
-    public String getTime() {
-        return time;
+    public String getMEETINGUID() {
+        return MEETINGUID;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public String getMTADDDT() {
+        return MTADDDT;
     }
 
-    public String getZipcode() {
-        return zipcode;
+    public String getMTADDUSER() {
+        return MTADDUSER;
     }
 
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
+    public String getMTCHGDT() {
+        return MTCHGDT;
     }
 
+    public String getMTCHGUSER() {
+        return MTCHGUSER;
+    }
+
+    public String getOPEN() {
+        return OPEN;
+    }
+
+    public String getPARENTADDDT() {
+        return PARENTADDDT;
+    }
+
+    public String getPARENTADDUSER() {
+        return PARENTADDUSER;
+    }
+
+    public String getPLACE() {
+        return PLACE;
+    }
+
+    public String getROOM() {
+        return ROOM;
+    }
+
+    public String getSTATE() {
+        return STATE;
+    }
+
+    public String getSTATENAME() {
+        return STATENAME;
+    }
+
+    public String getTIME() {
+        return TIME;
+    }
+
+    public String getWCHAIR() {
+        return WCHAIR;
+    }
+
+    public String getZIP() {
+        return ZIP;
+    }
 }

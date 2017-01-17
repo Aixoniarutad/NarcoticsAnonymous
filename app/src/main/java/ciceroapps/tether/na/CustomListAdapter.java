@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.firebase.androidchat.R;
 
 import java.util.ArrayList;
 
@@ -41,30 +40,32 @@ public class CustomListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.list_row_layout, null);
+            convertView = layoutInflater.inflate(R.layout.meeting_item, null);
             holder = new ViewHolder();
-            holder.titleView = (TextView) convertView.findViewById(R.id.meeting_title);
+            holder.placeView = (TextView) convertView.findViewById(R.id.meeting_place);
             holder.dayView = (TextView) convertView.findViewById(R.id.meeting_day);
-            holder.addressView = (TextView) convertView.findViewById(R.id.meeting_address);
-            holder.cityView = (TextView) convertView.findViewById(R.id.meeting_city);
+            holder.addressView = (TextView) convertView.findViewById(R.id.meeting_place);
+            holder.cityView = (TextView) convertView.findViewById(R.id.meeting_time);
+            holder.distanceView = (TextView) convertView.findViewById(R.id.meeting_distance);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
         MeetingItem item = listData.get(position);
-        holder.titleView.setText(item.getName());
-        holder.dayView.setText(item.getDay()+" - "+item.getTime());
-        holder.addressView.setText(item.getLocation_street());
-        holder.cityView.setText(item.getLocation_city()+", "+item.getState());
-        System.out.println(item.toString());
+        holder.placeView.setText(item.getPLACE());
+        holder.dayView.setText(item.getDAYCHAR()+" - "+item.getTIME());
+        holder.addressView.setText(item.getADDRESS());
+        holder.cityView.setText(item.getCITY()+", "+item.getSTATENAME());
+        holder.distanceView.setText(Long.valueOf(item.getDISTANCE()).toString());
         return convertView;
     }
 
     static class ViewHolder {
-        TextView titleView;
+        TextView placeView;
         TextView dayView;
         TextView addressView;
         TextView cityView;
+        TextView distanceView;
     }
 }
